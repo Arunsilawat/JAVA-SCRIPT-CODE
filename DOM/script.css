@@ -1,0 +1,5 @@
+#section{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    font-size: 30px;
+}
