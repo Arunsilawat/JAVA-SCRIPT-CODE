@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>please hit stop timer befor 5 seconds</h1>
+    <h1 id="demo"></h1>
+    <button onclick="stop()">Stop</button>
+
+    <script>
+    const mytimer = setTimeout(display,5000);
+    function display(){
+        document.getElementById("demo").innerHTML ="All the best for html prn"
+    }
+    function stop(){
+        clearTimeout(mytimer);
+    }
+    let name = "john dow";
+    console.log(name);
+    </script>
+</body>
+</html>

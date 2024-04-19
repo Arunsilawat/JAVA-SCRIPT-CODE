@@ -15,8 +15,6 @@ function display(){
 //document.getElementById("btn").addEventListener("click",display1);
 // function display1(){
 //     alert("this is also an event");
-// }
-
 // =================================================================================================
 
 document.getElementById("btn").addEventListener("click",display1);
