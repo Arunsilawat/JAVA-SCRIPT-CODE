@@ -54,4 +54,20 @@ const veggies =[ "okra","carrot","Cabbage","chilly"];
 const newArray = fruits.concat(veggies);
 console.log(newArray);
 
-//==============================================================================================================
+//==========================compaire function number ko badte kram me likhna ============================
+const array2 = [13,45,100,23,50,500];
+array2.sort(function (a,b){
+    return a-b;
+});
+console.log(array2);
+
+const array3 = [13,45,100,23,50,500];
+array2.sort(function (a,b){
+    return b-a;
+});
+console.log(array3);
+//================= reverse array =====================
+
+console.log(array3);
+array3.reverse();
+console.log(array3);
