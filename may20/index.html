@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Java async await</h1>
+    <h1 id="demo"></h1>
+    <script>
+        //============================ promise in a object true false ===================
+        //pending ,fullfill,rejected three types ke hote hai 
+        // let promise = new Promise((resolve,reject)=>{
+        //     let something = true;
+        //     if(something){
+        //         resolve("Successful");
+        //     }
+        //     else{
+        //         reject("It is rejected");
+        //     }
+        // });
+        // console.log(promise);
+        // promise.then((res)=>{
+        //     console.log(res);
+        //     alert(res);
+        // })
+        // .catch((err)=>{
+        //     console.log(err);
+        //     alert(err);
+        // })
+
+    //==================async=====================
+    //async -- function run krega sath me dusre function apna kam karenge
+    //async-- promise return karega
+    // await --jab tak value function nhi milta tak tak function ko aange run nhi karega
+async function mydisplay(){
+    let mydisplay= new Promise(function(resolve){
+        resolve("I love javascript");
+    });
+    document.getElementById("demo").innerHTML=await mydisplay;
+}
+mydisplay();
+//============================================================  
+    </script>
+</body>
+</html>

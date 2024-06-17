@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+ 
+            async function Dohomework(){
+                return new Promise((resolve,reject)=>{
+                    setTimeout(()=>{
+                        let homework = true;
+                        if(homework){
+                            resolve("you have complated your homework");
+                        }
+                        else{
+                            reject("you have not complated your work");
+                        }
+                    },1500);
+                });
+            }
+            async function havelunch(){
+                return new Promise((resolve,reject)=>{
+                    setTimeout(()=>{
+                        let lunch = true;
+                        if(lunch){
+                            resolve("you have finished your lunch");
+                        }
+                        else{
+                            reject("you have not finished your lunch");
+                        }
+                    },2000);
+                });
+            }
+            async function takenrest(){
+                return new Promise((resolve,reject)=>{
+                    setTimeout(()=>{
+                        let rest = true;
+                        if(rest){
+                            resolve("yes taken rest");
+                        }
+                        else{
+                            reject("not taken rest");
+                        }
+                    },2000);
+                });
+            }
+            async function allworkdone(){
+                const dohome = await Dohomework();
+                console.log(dohome);
+
+                const lunchresult=await havelunch();
+                console.log(lunchresult);
+
+                const restresult=await takenrest();
+                console.log(restresult);
+
+                console.log("All tasks are finished");
+            }
+
+            allworkdone()
+
+     
+    </script>
+</body>
+</html>

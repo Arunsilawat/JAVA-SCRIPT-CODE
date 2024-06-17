@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function (){
+            $("#mypara").mouseenter(function () {
+                $(this).hide();
+            });
+
+            
+            $("#mypara").mouseleave(function () {
+                $(this).show();
+            });
+        })
+
+        //-------hover ------------
+
+        $(document).ready(function(){
+            $("#mypara").hover(
+                function(){
+                    alert("you entered paragraph");
+                },
+                function(){
+                    alert("you exited paragraph");
+                }
+            );
+        });
+
+        //----------css color change------
+        $(document).ready(function (){
+            $('#myinput').focus(function () {
+                $(this).css("background-color","yellow");
+            });
+            $('#myinput').blur(function () {
+                $(this).css("background-color","green");
+            });
+        })
+    </script>
+</head>
+<body>
+    <p id="mypara">Lorem ipsum dolor sit amet.</p>
+    <p class="para">Lorem ipsum dolor sit.</p>
+    <p class="para1">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+    <input id="myinput" type="text">
+
+    <button>click</button>
+</body>
+</html>

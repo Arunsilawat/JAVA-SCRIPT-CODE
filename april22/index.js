@@ -12,7 +12,7 @@ let flen = fruits.length;
 console.log(flen);
 let text = '<ul>';
 for(let i=0;i<flen; i++){
-    text +="<li>"+fruits[i]+"</>";
+    text +="<li>"+fruits[i]+"</li>";
 }
 text+="</ul>";
 document.getElementById("demo").innerHTML=text;

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo"></h1>
+    <script>
+
+        // =========callback function ==============================
+        // function display(some){
+        //     document.getElementById("demo").innerHTML=some;
+        // }
+        // function display1(num1,num2,xyz){
+        //     let sum=num1+num2;
+        //     xyz(sum);
+        // }
+        // display1(5,70,display);
+
+
+        //================asynchronos =============
+        // console.log("Arun");
+        // setTimeout(myfunction,3000);
+        // console.log(33);
+        // function myfunction(){
+        //     document.getElementById("demo").innerHTML="I am from bhopal";
+        // }
+        //====================== setinterval =================
+        
+        setInterval(myfunction,1000);
+        function myfunction(){
+            let d= new Date();
+            document.getElementById("demo").innerHTML=d.getHours()+" :"+d.getMinutes()+" :"+d.getSeconds();
+        }
+    </script>
+</body>
+</html>

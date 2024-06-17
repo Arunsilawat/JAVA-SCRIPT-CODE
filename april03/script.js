@@ -17,7 +17,7 @@ else{
 
 function validate(){
     let myname = document.f1.name.value;
-    let mycity = document.f1.city.value;bb
+    let mycity = document.f1.city.value;
     alert(myname+" "+mycity);
 
     if( myname ==""){

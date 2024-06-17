@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+            //  async function display(){
+            //     return new Promise((resolve,reject)=>{
+            //         setTimeout(()=>{
+            //             let java=true;
+            //             if(java){
+            //                 resolve("I am studying java script");
+            //             }
+            //         },2000);
+            //     });
+            // };
+            // async function display1(){
+            //     return new Promise((resolve,reject)=>{
+            //         setTimeout(()=>{
+            //             let html=true;
+            //             if(html){
+            //                 resolve("I am studying html");
+            //             }
+            //         },2500);
+            //     });
+            // };
+            // async function displayall(){
+            //     let result=await display();
+            //     console.log(result);
+
+            //     let result1=await display1();
+            //     console.log(result1);
+            // }
+            // displayall();
+            //------------------------------------------ Array return ---------------------------------------
+         async function abc(){
+            const promise= new Promise((resolve)=>{
+                resolve("I am Arun");
+            })
+            const promise1= new Promise((resolve)=>{
+                resolve("I am from bhopal");
+            })
+            const promise2= new Promise((resolve)=>{
+                resolve("I am fullsteak student");
+            })
+            const result= await promise;
+            const result1=await promise1;
+            const result2=await promise2;
+             
+            return [result,result1,result2];
+         };
+         async function display(){
+            let final= await abc();
+            console.log(final);
+         }
+         display();
+         
+    </script>
+</body>
+</html>
